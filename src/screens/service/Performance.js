@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View,ScrollView } from 'react-native'
 import React from 'react'
 import { ViewBase } from 'react-native'
-
+import Charts from '../Charts'
 const Performance = () => {
   return (
+<ScrollView>
   <View style={styles.parentcontainer}>
      <View>
           <View>
@@ -35,6 +36,8 @@ const Performance = () => {
           </View>
        </View>
     </View>
+    <Charts/>
+  </ScrollView>
   )
 }
 
