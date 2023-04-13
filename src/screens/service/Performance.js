@@ -4,7 +4,8 @@ import { ViewBase } from 'react-native'
 
 const Performance = () => {
   return (
-      <View >
+  <View style={styles.parentcontainer}>
+     <View>
           <View>
              <Text>current value</Text>
              <View style={styles.child1view}>
@@ -32,6 +33,7 @@ const Performance = () => {
                  <Text>GHS 1500</Text>
               </View>
           </View>
+       </View>
     </View>
   )
 }
@@ -39,6 +41,16 @@ const Performance = () => {
 export default Performance
 
 const styles = StyleSheet.create({
+  parentcontainer:{
+    display:'flex',
+    flexDirection:'column',
+    justifyContent:'center',
+    alignContent:'center',
+    backgroundColor:'lightGray',
+    margin:10,
+    padding:10,
+    height:100
+  },
   child1view:{
     display:'flex',
     flexDirection:'row',
